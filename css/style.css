@@ -1,0 +1,376 @@
+
+/* Primary Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap'); */
+/* Secondary Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap'); */
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+body,
+html{
+
+  font-weight: 500;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Css for Header */
+.header-sec{
+  background:  url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-size: 1800px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-bottom-left-radius: 100px;
+}
+/* Css for  Navbar */
+.container-fluid{
+  margin: 45px 6rem;
+}
+.nav-link{
+  font-size: 1rem;
+  color: #F5F5F5;
+}
+.nav-link:focus,
+.nav-link:hover{
+  outline: none;
+  color: white;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  color: black;
+  font-weight: 600;
+  background: none;
+}
+
+.btn{
+  font-family: "Ubuntu";
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+.btn-l:hover{
+  color: hsl(355, 100%, 74%);
+}
+.nav-btn{
+  color: hsl(355, 100%, 74%);
+}
+.nav-btn:hover,
+.nav-btn:focus{
+  border: none;
+  color: white;
+  background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)) ;
+}
+.nav-brand{
+  margin-right: 40px;
+}
+/* heading */
+.main-heading{
+  color: white;
+  font-family: "Overpass";
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.sub-heading{
+  color: white;
+  font-family: "Overpass";
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.buttons{
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+/* After Head Section */
+.heading-future{
+  text-align: center;
+  margin: 100px;
+  color: hsl(208, 49%, 24%);
+}
+h3{
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+h5{
+  font-size: 1.5rem;
+
+}
+.ok{
+  margin-top: 30px;
+}
+p{
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+.row{
+  padding: 0;
+  margin: 0;
+}
+.text-intro{
+  padding-left: 180px;
+}
+.intro-sec{
+  background: url("../images/illustration-editor-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: right -205px top 0px;
+  color: hsl(208, 49%, 24%);
+}
+.empty-div{
+  height: 200px;
+}
+
+/* Mobile phone Section */
+
+.mobiles-sec{
+  margin: 80px 0;
+  background:url(../images/bg-pattern-circles.svg), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100%;
+  color: white;
+  height: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.phone{
+  padding-left: 130px;
+      height: 352px;
+}
+.phone img{
+  position: relative;
+   top: -108px;
+    height: 560px;
+}
+.phone-sec-2{
+  padding: 0 100px;
+}
+
+
+/* Laptop Section */
+
+
+.laptop-sec{
+  margin: 100px 0;
+  height: 700px;
+  background: url("../images/illustration-laptop-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left -180px top 0px;
+  display: flex;
+  align-items: center;
+  color: hsl(208, 49%, 24%);
+}
+.lap-text{
+  padding-right: 180px;
+}
+
+/* Footer Section */
+.footer-sec{
+  padding-top: 20px;
+  color: white;
+  height: 300px;
+  background: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
+}
+.container-footer{
+   margin-top: 39px;
+   margin-left: 71px;
+}
+.footer-sec h5{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.footer-sec .logo{
+  margin-right: 30px;
+}
+.footer-links{
+  font-weight: 400;
+  color: #EEEEEE;
+}
+.footer-links:hover {
+  color: white;
+  text-decoration: underline;
+}
+.line{
+  display: none;
+}
+
+
+/* For resposivness */
+@media (max-width:375px){
+
+  /* for Navbar Section */
+  .container-fluid{
+    margin: 10px 20px;
+  }
+  img.nav-brand{
+    height: 30px;
+  }
+  .fa-stream:before{
+    color: white;
+    outline: none;
+  }
+  .navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+  }
+  .nav-link {
+    color:hsl(208, 49%, 24%);
+    padding: 15px 0;
+  }
+  .nav-link:focus{
+    color: #7b7979;
+  }
+  .dropdown-menu.show {
+    display: block;
+    background: #ece8e8;
+    border: none;
+    text-align:center;
+  }
+  .dropdown-item{
+    color: #7b7979;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .line{
+    display: block;
+    border: 1px solid #7b7979;
+  }
+  .d-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #navbarScroll{
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 32px;
+    margin: 25px 0;
+  }
+
+  /* Main Heading Section */
+  .headings{
+    padding: 24px;
+    padding-top: 60px;
+  }
+  .main-heading{
+    font-size: 2.2rem;
+    line-height: 1.2;
+    padding-bottom: 12px;
+  }
+  .sub-heading{
+    font-size: 19px;
+  }
+  .btn{
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 4px;
+  }
+
+  /* Intro Sec */
+  .heading-future{
+    margin: 66px auto;
+  }
+  h3, h5{
+    font-size: 1.8rem;
+  }
+  .intro-sec{
+    background: url("../images/illustration-editor-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top 90px;
+  }
+  .text-intro{
+    text-align: center;
+    padding-left: 0;
+    padding: 320px 50px;
+    padding-bottom: 180px;
+    font-size: 2rem;
+  }
+  .empty-div{
+    height: 0;
+  }
+
+  /* Phone Section */
+  .mobiles-sec{
+    height: auto;
+    background-position: left top;
+
+  }
+  .phone{
+    text-align: center;
+    padding-left: 0;
+    height: 190px;
+  }
+  .phone img{
+    position: relative;
+    top: -205px;
+    height: 390px;
+  }
+  .phone-sec-2{
+    padding: 0 50px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+
+  /* Laptop Section */
+  .laptop-sec{
+    background: url("../images/illustration-laptop-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 140px 13px;
+  }
+  .lap-text{
+    padding: 0 20px;
+    text-align: center;
+  }
+  .txt{
+    margin-top: 400px;
+  }
+  .ok{
+    margin-top: 50px;
+  }
+
+
+  /* Footer Section */
+  .footer-sec{
+    height: auto;
+  }
+  .container-footer{
+    text-align: center;
+    margin-left: 0;
+  }
+  .margin{
+    margin: 20px 0;
+    color: white;
+  }
+  .footer-links{
+    color: white;
+  }
+  .footer-sec h5{
+    font-size: 1.5rem;
+  }
+}
